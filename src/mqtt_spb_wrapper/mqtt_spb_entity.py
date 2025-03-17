@@ -31,7 +31,7 @@ class MqttSpbEntity(SpbEntity):
         self.on_message = None
 
         # Private members -----------
-        self._spb_namespace = "spBv1.0"     # Default spb namespace
+        self._spb_namespace = "mfi-v1.0-historian"     # Default spb namespace
         self._retain_birth = retain_birth
         self._entity_is_scada = entity_is_scada
         self._mqtt = None  # Mqtt client object
