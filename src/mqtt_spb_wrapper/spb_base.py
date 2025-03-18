@@ -873,7 +873,7 @@ class SpbEntity:
                 # Add metric to payload
                 self._serialize_payload_metric(
                     payload=payload,
-                    name=item.name,
+                    name=self.data.birth_prefix + "/" + item.name,
                     metric_value=item
                 )
 
