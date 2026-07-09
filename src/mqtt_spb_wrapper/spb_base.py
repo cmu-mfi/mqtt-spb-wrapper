@@ -1003,7 +1003,9 @@ class SpbTopic:
             raise ValueError(f"Invalid topic string: {topic_str}")
 
         # Check name space
-        if topic_fields[0] != "spBv1.0" and topic_fields[0] != "sspBv1.0":
+        # if topic_fields[0] != "spBv1.0" and topic_fields[0] != "sspBv1.0":
+        # Changed to mfi standard namespace
+        if topic_fields[0] != "mfi-v1.0-historian":
             raise ValueError(f"Invalid topic string: {topic_str}")
 
         self.topic = topic_str
